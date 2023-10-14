@@ -1,0 +1,9 @@
+Package: fr.bibi-fire.roothelper
+Name: RootHelper
+Version: 0.0.1
+Architecture: iphoneos-arm
+Description: An awesome tool of some sort!!
+Maintainer: BibiFire
+Author: BibiFire
+Section: System
+Tag: role::hacker

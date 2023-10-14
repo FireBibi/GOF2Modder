@@ -1,0 +1,662 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		340810F52A97DA7800832AB6 /* Ship.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340810F42A97DA7800832AB6 /* Ship.swift */; };
+		340810F72A97DAA700832AB6 /* CommonHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340810F62A97DAA700832AB6 /* CommonHandling.swift */; };
+		340810F92A9902A800832AB6 /* StationsHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340810F82A9902A800832AB6 /* StationsHandling.swift */; };
+		340810FB2A99042A00832AB6 /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340810FA2A99042A00832AB6 /* Station.swift */; };
+		340810FF2A9908A800832AB6 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340810FE2A9908A800832AB6 /* SettingsView.swift */; };
+		340811042A990A8C00832AB6 /* SystemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340811032A990A8C00832AB6 /* SystemsView.swift */; };
+		340811062A990AB100832AB6 /* StationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340811052A990AB100832AB6 /* StationsView.swift */; };
+		347B4D502ACB529A00F44FC0 /* CoreServices.h in Sources */ = {isa = PBXBuildFile; fileRef = 34C04E3F2AC9E652005B6EF3 /* CoreServices.h */; };
+		347B4D512ACB529A00F44FC0 /* TSUtil.h in Sources */ = {isa = PBXBuildFile; fileRef = 34C04E3D2AC9E651005B6EF3 /* TSUtil.h */; };
+		347B4D522ACB529A00F44FC0 /* TSUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 34C04E3E2AC9E651005B6EF3 /* TSUtil.m */; };
+		349F93EA2AA4F23700FBDC99 /* entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = 349F93E92AA4F23700FBDC99 /* entitlements.plist */; };
+		349F93EC2AA91A6D00FBDC99 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349F93EB2AA91A6D00FBDC99 /* Utils.swift */; };
+		34ABB91E2A96658B00F9833D /* ShipsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34ABB91D2A96658B00F9833D /* ShipsView.swift */; };
+		34ABB9202A966B7300F9833D /* ShipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34ABB91F2A966B7300F9833D /* ShipView.swift */; };
+		34ABB9232A967D5000F9833D /* ShipsHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34ABB9222A967D5000F9833D /* ShipsHandling.swift */; };
+		34BB39462AA4C68E006DF019 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34BB39452AA4C68E006DF019 /* IOKit.framework */; };
+		34BC9B562A96627700B103C2 /* GOF2ModderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BC9B552A96627700B103C2 /* GOF2ModderApp.swift */; };
+		34BC9B582A96627700B103C2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BC9B572A96627700B103C2 /* ContentView.swift */; };
+		34BC9B5A2A96627900B103C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34BC9B592A96627900B103C2 /* Assets.xcassets */; };
+		34BC9B5D2A96627900B103C2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34BC9B5C2A96627900B103C2 /* Preview Assets.xcassets */; };
+		34C04E2F2AC9D66E005B6EF3 /* WeaponsHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C04E2E2AC9D66E005B6EF3 /* WeaponsHandling.swift */; };
+		34C04E312AC9D70B005B6EF3 /* Weapon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C04E302AC9D70B005B6EF3 /* Weapon.swift */; };
+		34C04E362AC9E4CE005B6EF3 /* Read.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C04E352AC9E4CE005B6EF3 /* Read.swift */; };
+		34C04E382AC9E4D8005B6EF3 /* Write.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C04E372AC9E4D8005B6EF3 /* Write.swift */; };
+		34C04E3B2AC9E53B005B6EF3 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C04E3A2AC9E53B005B6EF3 /* Extensions.swift */; };
+		34C04E412AC9EE02005B6EF3 /* WeaponView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C04E402AC9EE02005B6EF3 /* WeaponView.swift */; };
+		34C04E432AC9EFF0005B6EF3 /* WeaponEditingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C04E422AC9EFF0005B6EF3 /* WeaponEditingView.swift */; };
+		34C5ACD12A9BD10D00486D3A /* SystemsHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C5ACD02A9BD10D00486D3A /* SystemsHandling.swift */; };
+		34C5ACD32A9BD20600486D3A /* System.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C5ACD22A9BD20600486D3A /* System.swift */; };
+		34C5ACE12A9BE76700486D3A /* SystemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C5ACE02A9BE76700486D3A /* SystemView.swift */; };
+		34C5ACE42A9BF52500486D3A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C5ACE32A9BF52500486D3A /* Constants.swift */; };
+		34C5ACE62A9E52C900486D3A /* ItemsHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C5ACE52A9E52C900486D3A /* ItemsHandling.swift */; };
+		34C5ACE82A9E764000486D3A /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C5ACE72A9E764000486D3A /* SearchBar.swift */; };
+		34C5ACEA2A9F6ED000486D3A /* ItemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C5ACE92A9F6ED000486D3A /* ItemsView.swift */; };
+		34C5ACEC2A9FC11700486D3A /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C5ACEB2A9FC11600486D3A /* Item.swift */; };
+		34C5ACEE2A9FCAC500486D3A /* ItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C5ACED2A9FCAC500486D3A /* ItemView.swift */; };
+		34C5ACF12A9FE58600486D3A /* CustomStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C5ACF02A9FE58600486D3A /* CustomStepper.swift */; };
+		34D754C22AA4DD9100D49FC2 /* GOF2Modder-Bridging-Header.h in Sources */ = {isa = PBXBuildFile; fileRef = 34D754C12AA4DC5D00D49FC2 /* GOF2Modder-Bridging-Header.h */; };
+		E217385A2A9B9FE00002A825 /* StationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21738592A9B9FE00002A825 /* StationView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		340810F42A97DA7800832AB6 /* Ship.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ship.swift; sourceTree = "<group>"; };
+		340810F62A97DAA700832AB6 /* CommonHandling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonHandling.swift; sourceTree = "<group>"; };
+		340810F82A9902A800832AB6 /* StationsHandling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationsHandling.swift; sourceTree = "<group>"; };
+		340810FA2A99042A00832AB6 /* Station.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Station.swift; sourceTree = "<group>"; };
+		340810FE2A9908A800832AB6 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		340811032A990A8C00832AB6 /* SystemsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemsView.swift; sourceTree = "<group>"; };
+		340811052A990AB100832AB6 /* StationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationsView.swift; sourceTree = "<group>"; };
+		341E511F2AD6C68C0038FC2A /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		341E51222AD6C68C0038FC2A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		341E51232AD6C68C0038FC2A /* control */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = control; sourceTree = "<group>"; };
+		341E51302AD724450038FC2A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		341E51312AD7333E0038FC2A /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		341E51322ADADF520038FC2A /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		349F93E82AA4F18B00FBDC99 /* ipabuild.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = ipabuild.sh; sourceTree = "<group>"; };
+		349F93E92AA4F23700FBDC99 /* entitlements.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = entitlements.plist; sourceTree = "<group>"; };
+		349F93EB2AA91A6D00FBDC99 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		34ABB91D2A96658B00F9833D /* ShipsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipsView.swift; sourceTree = "<group>"; };
+		34ABB91F2A966B7300F9833D /* ShipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipView.swift; sourceTree = "<group>"; };
+		34ABB9222A967D5000F9833D /* ShipsHandling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipsHandling.swift; sourceTree = "<group>"; };
+		34BB39452AA4C68E006DF019 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		34BC9B522A96627700B103C2 /* GOF2Modder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GOF2Modder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		34BC9B552A96627700B103C2 /* GOF2ModderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GOF2ModderApp.swift; sourceTree = "<group>"; };
+		34BC9B572A96627700B103C2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		34BC9B592A96627900B103C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		34BC9B5C2A96627900B103C2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		34C04E2E2AC9D66E005B6EF3 /* WeaponsHandling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponsHandling.swift; sourceTree = "<group>"; };
+		34C04E302AC9D70B005B6EF3 /* Weapon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weapon.swift; sourceTree = "<group>"; };
+		34C04E352AC9E4CE005B6EF3 /* Read.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Read.swift; sourceTree = "<group>"; };
+		34C04E372AC9E4D8005B6EF3 /* Write.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Write.swift; sourceTree = "<group>"; };
+		34C04E3A2AC9E53B005B6EF3 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		34C04E3D2AC9E651005B6EF3 /* TSUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSUtil.h; sourceTree = "<group>"; };
+		34C04E3E2AC9E651005B6EF3 /* TSUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSUtil.m; sourceTree = "<group>"; };
+		34C04E3F2AC9E652005B6EF3 /* CoreServices.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreServices.h; sourceTree = "<group>"; };
+		34C04E402AC9EE02005B6EF3 /* WeaponView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponView.swift; sourceTree = "<group>"; };
+		34C04E422AC9EFF0005B6EF3 /* WeaponEditingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponEditingView.swift; sourceTree = "<group>"; };
+		34C5ACD02A9BD10D00486D3A /* SystemsHandling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemsHandling.swift; sourceTree = "<group>"; };
+		34C5ACD22A9BD20600486D3A /* System.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = System.swift; sourceTree = "<group>"; };
+		34C5ACE02A9BE76700486D3A /* SystemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemView.swift; sourceTree = "<group>"; };
+		34C5ACE32A9BF52500486D3A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		34C5ACE52A9E52C900486D3A /* ItemsHandling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsHandling.swift; sourceTree = "<group>"; };
+		34C5ACE72A9E764000486D3A /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		34C5ACE92A9F6ED000486D3A /* ItemsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsView.swift; sourceTree = "<group>"; };
+		34C5ACEB2A9FC11600486D3A /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		34C5ACED2A9FCAC500486D3A /* ItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemView.swift; sourceTree = "<group>"; };
+		34C5ACF02A9FE58600486D3A /* CustomStepper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomStepper.swift; sourceTree = "<group>"; };
+		34D754C12AA4DC5D00D49FC2 /* GOF2Modder-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GOF2Modder-Bridging-Header.h"; sourceTree = "<group>"; };
+		E21738592A9B9FE00002A825 /* StationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		34BC9B4F2A96627700B103C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34BB39462AA4C68E006DF019 /* IOKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		340811002A990A4000832AB6 /* Items */ = {
+			isa = PBXGroup;
+			children = (
+				34ABB91F2A966B7300F9833D /* ShipView.swift */,
+				E21738592A9B9FE00002A825 /* StationView.swift */,
+				34C5ACE02A9BE76700486D3A /* SystemView.swift */,
+				34C5ACE72A9E764000486D3A /* SearchBar.swift */,
+				34C5ACED2A9FCAC500486D3A /* ItemView.swift */,
+				34C5ACF02A9FE58600486D3A /* CustomStepper.swift */,
+				34C04E402AC9EE02005B6EF3 /* WeaponView.swift */,
+				34C04E422AC9EFF0005B6EF3 /* WeaponEditingView.swift */,
+			);
+			path = Items;
+			sourceTree = "<group>";
+		};
+		341E511E2AD6C68C0038FC2A /* roothelper */ = {
+			isa = PBXGroup;
+			children = (
+				341E511F2AD6C68C0038FC2A /* Makefile */,
+				341E51222AD6C68C0038FC2A /* main.m */,
+				341E51232AD6C68C0038FC2A /* control */,
+			);
+			path = roothelper;
+			sourceTree = "<group>";
+		};
+		34ABB91A2A96652C00F9833D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				340811002A990A4000832AB6 /* Items */,
+				34ABB91D2A96658B00F9833D /* ShipsView.swift */,
+				340811032A990A8C00832AB6 /* SystemsView.swift */,
+				340810FE2A9908A800832AB6 /* SettingsView.swift */,
+				340811052A990AB100832AB6 /* StationsView.swift */,
+				34C5ACE92A9F6ED000486D3A /* ItemsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		34ABB91C2A96657000F9833D /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				340810F42A97DA7800832AB6 /* Ship.swift */,
+				340810FA2A99042A00832AB6 /* Station.swift */,
+				34C5ACD22A9BD20600486D3A /* System.swift */,
+				34C5ACEB2A9FC11600486D3A /* Item.swift */,
+				34C04E302AC9D70B005B6EF3 /* Weapon.swift */,
+			);
+			path = Objects;
+			sourceTree = "<group>";
+		};
+		34ABB9212A967CED00F9833D /* DataHandling */ = {
+			isa = PBXGroup;
+			children = (
+				34C04E322AC9E488005B6EF3 /* impl */,
+				340810F62A97DAA700832AB6 /* CommonHandling.swift */,
+				34C04E352AC9E4CE005B6EF3 /* Read.swift */,
+				34C04E372AC9E4D8005B6EF3 /* Write.swift */,
+			);
+			path = DataHandling;
+			sourceTree = "<group>";
+		};
+		34BB38D12AA4AB75006DF019 /* Exploit */ = {
+			isa = PBXGroup;
+			children = (
+				34C04E3C2AC9E651005B6EF3 /* TSUtils */,
+			);
+			path = Exploit;
+			sourceTree = "<group>";
+		};
+		34BB39442AA4C68E006DF019 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				34BB39452AA4C68E006DF019 /* IOKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		34BC9B492A96627700B103C2 = {
+			isa = PBXGroup;
+			children = (
+				341E51322ADADF520038FC2A /* LICENSE */,
+				341E51312AD7333E0038FC2A /* .gitignore */,
+				341E51302AD724450038FC2A /* README.md */,
+				341E511E2AD6C68C0038FC2A /* roothelper */,
+				349F93E92AA4F23700FBDC99 /* entitlements.plist */,
+				349F93E82AA4F18B00FBDC99 /* ipabuild.sh */,
+				34BC9B542A96627700B103C2 /* GOF2Modder */,
+				34BC9B532A96627700B103C2 /* Products */,
+				34BB39442AA4C68E006DF019 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		34BC9B532A96627700B103C2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				34BC9B522A96627700B103C2 /* GOF2Modder.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		34BC9B542A96627700B103C2 /* GOF2Modder */ = {
+			isa = PBXGroup;
+			children = (
+				34C04E392AC9E525005B6EF3 /* Utils */,
+				34BB38D12AA4AB75006DF019 /* Exploit */,
+				34ABB9212A967CED00F9833D /* DataHandling */,
+				34ABB91C2A96657000F9833D /* Objects */,
+				34ABB91A2A96652C00F9833D /* Views */,
+				34BC9B552A96627700B103C2 /* GOF2ModderApp.swift */,
+				34BC9B572A96627700B103C2 /* ContentView.swift */,
+				34BC9B592A96627900B103C2 /* Assets.xcassets */,
+				34BC9B5B2A96627900B103C2 /* Preview Content */,
+			);
+			path = GOF2Modder;
+			sourceTree = "<group>";
+		};
+		34BC9B5B2A96627900B103C2 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				34BC9B5C2A96627900B103C2 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		34C04E322AC9E488005B6EF3 /* impl */ = {
+			isa = PBXGroup;
+			children = (
+				34ABB9222A967D5000F9833D /* ShipsHandling.swift */,
+				340810F82A9902A800832AB6 /* StationsHandling.swift */,
+				34C5ACD02A9BD10D00486D3A /* SystemsHandling.swift */,
+				34C5ACE52A9E52C900486D3A /* ItemsHandling.swift */,
+				34C04E2E2AC9D66E005B6EF3 /* WeaponsHandling.swift */,
+			);
+			path = impl;
+			sourceTree = "<group>";
+		};
+		34C04E392AC9E525005B6EF3 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				349F93EB2AA91A6D00FBDC99 /* Utils.swift */,
+				34C04E3A2AC9E53B005B6EF3 /* Extensions.swift */,
+				34C5ACE32A9BF52500486D3A /* Constants.swift */,
+				34D754C12AA4DC5D00D49FC2 /* GOF2Modder-Bridging-Header.h */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		34C04E3C2AC9E651005B6EF3 /* TSUtils */ = {
+			isa = PBXGroup;
+			children = (
+				34C04E3F2AC9E652005B6EF3 /* CoreServices.h */,
+				34C04E3D2AC9E651005B6EF3 /* TSUtil.h */,
+				34C04E3E2AC9E651005B6EF3 /* TSUtil.m */,
+			);
+			path = TSUtils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXLegacyTarget section */
+		341E51292AD6C6A50038FC2A /* RootHelper */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "$(ACTION)";
+			buildConfigurationList = 341E512A2AD6C6A50038FC2A /* Build configuration list for PBXLegacyTarget "RootHelper" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/make;
+			buildWorkingDirectory = "/Users/pierre-etienne/Documents/dev/GOF2Modder/roothelper";
+			dependencies = (
+			);
+			name = RootHelper;
+			passBuildSettingsInEnvironment = 1;
+			productName = RootHelper;
+		};
+/* End PBXLegacyTarget section */
+
+/* Begin PBXNativeTarget section */
+		34BC9B512A96627700B103C2 /* GOF2Modder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 34BC9B602A96627900B103C2 /* Build configuration list for PBXNativeTarget "GOF2Modder" */;
+			buildPhases = (
+				34BC9B4E2A96627700B103C2 /* Sources */,
+				34BC9B4F2A96627700B103C2 /* Frameworks */,
+				34BC9B502A96627700B103C2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				34369DEB2ABF04A7005CBB89 /* PBXTargetDependency */,
+			);
+			name = GOF2Modder;
+			productName = GOF2Modder;
+			productReference = 34BC9B522A96627700B103C2 /* GOF2Modder.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		34BC9B4A2A96627700B103C2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					341E51292AD6C6A50038FC2A = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					34BC9B512A96627700B103C2 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 34BC9B4D2A96627700B103C2 /* Build configuration list for PBXProject "GOF2Modder" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 34BC9B492A96627700B103C2;
+			productRefGroup = 34BC9B532A96627700B103C2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				34BC9B512A96627700B103C2 /* GOF2Modder */,
+				341E51292AD6C6A50038FC2A /* RootHelper */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		34BC9B502A96627700B103C2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				349F93EA2AA4F23700FBDC99 /* entitlements.plist in Resources */,
+				34BC9B5D2A96627900B103C2 /* Preview Assets.xcassets in Resources */,
+				34BC9B5A2A96627900B103C2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		34BC9B4E2A96627700B103C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				347B4D502ACB529A00F44FC0 /* CoreServices.h in Sources */,
+				347B4D512ACB529A00F44FC0 /* TSUtil.h in Sources */,
+				347B4D522ACB529A00F44FC0 /* TSUtil.m in Sources */,
+				34D754C22AA4DD9100D49FC2 /* GOF2Modder-Bridging-Header.h in Sources */,
+				34ABB9202A966B7300F9833D /* ShipView.swift in Sources */,
+				34C5ACE42A9BF52500486D3A /* Constants.swift in Sources */,
+				34C5ACD12A9BD10D00486D3A /* SystemsHandling.swift in Sources */,
+				340810FB2A99042A00832AB6 /* Station.swift in Sources */,
+				34C5ACEC2A9FC11700486D3A /* Item.swift in Sources */,
+				349F93EC2AA91A6D00FBDC99 /* Utils.swift in Sources */,
+				34C5ACF12A9FE58600486D3A /* CustomStepper.swift in Sources */,
+				34C04E3B2AC9E53B005B6EF3 /* Extensions.swift in Sources */,
+				34C5ACEE2A9FCAC500486D3A /* ItemView.swift in Sources */,
+				34C04E2F2AC9D66E005B6EF3 /* WeaponsHandling.swift in Sources */,
+				34C04E312AC9D70B005B6EF3 /* Weapon.swift in Sources */,
+				340810F52A97DA7800832AB6 /* Ship.swift in Sources */,
+				34BC9B582A96627700B103C2 /* ContentView.swift in Sources */,
+				340810F92A9902A800832AB6 /* StationsHandling.swift in Sources */,
+				34C5ACEA2A9F6ED000486D3A /* ItemsView.swift in Sources */,
+				340811062A990AB100832AB6 /* StationsView.swift in Sources */,
+				34C04E382AC9E4D8005B6EF3 /* Write.swift in Sources */,
+				340810FF2A9908A800832AB6 /* SettingsView.swift in Sources */,
+				34ABB9232A967D5000F9833D /* ShipsHandling.swift in Sources */,
+				34C04E432AC9EFF0005B6EF3 /* WeaponEditingView.swift in Sources */,
+				34C04E412AC9EE02005B6EF3 /* WeaponView.swift in Sources */,
+				340810F72A97DAA700832AB6 /* CommonHandling.swift in Sources */,
+				34C5ACD32A9BD20600486D3A /* System.swift in Sources */,
+				34C5ACE12A9BE76700486D3A /* SystemView.swift in Sources */,
+				340811042A990A8C00832AB6 /* SystemsView.swift in Sources */,
+				34ABB91E2A96658B00F9833D /* ShipsView.swift in Sources */,
+				34C5ACE82A9E764000486D3A /* SearchBar.swift in Sources */,
+				34C04E362AC9E4CE005B6EF3 /* Read.swift in Sources */,
+				34BC9B562A96627700B103C2 /* GOF2ModderApp.swift in Sources */,
+				E217385A2A9B9FE00002A825 /* StationView.swift in Sources */,
+				34C5ACE62A9E52C900486D3A /* ItemsHandling.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		34369DEB2ABF04A7005CBB89 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 34369DEA2ABF04A7005CBB89 /* SwiftUIIntrospect */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		341E512B2AD6C6A50038FC2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEBUGGING_SYMBOLS = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = D5Q75KD345;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		341E512C2AD6C6A50038FC2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = D5Q75KD345;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		34BC9B5E2A96627900B103C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/$(PROJECT_NAME)-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		34BC9B5F2A96627900B103C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/$(PROJECT_NAME)-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		34BC9B612A96627900B103C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"GOF2Modder/Preview Content\"";
+				DEVELOPMENT_TEAM = D5Q75KD345;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INSTALL_OWNER = bibi_fire;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = "fr.bibi-fire.GOF2Modder";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/Utils/$(SWIFT_MODULE_NAME)-Bridging-Header.h";
+				SWIFT_PRECOMPILE_BRIDGING_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		34BC9B622A96627900B103C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"GOF2Modder/Preview Content\"";
+				DEVELOPMENT_TEAM = D5Q75KD345;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INSTALL_OWNER = bibi_fire;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = "fr.bibi-fire.GOF2Modder";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/Utils/$(SWIFT_MODULE_NAME)-Bridging-Header.h";
+				SWIFT_PRECOMPILE_BRIDGING_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		341E512A2AD6C6A50038FC2A /* Build configuration list for PBXLegacyTarget "RootHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				341E512B2AD6C6A50038FC2A /* Debug */,
+				341E512C2AD6C6A50038FC2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		34BC9B4D2A96627700B103C2 /* Build configuration list for PBXProject "GOF2Modder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34BC9B5E2A96627900B103C2 /* Debug */,
+				34BC9B5F2A96627900B103C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		34BC9B602A96627900B103C2 /* Build configuration list for PBXNativeTarget "GOF2Modder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34BC9B612A96627900B103C2 /* Debug */,
+				34BC9B622A96627900B103C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		34369DEA2ABF04A7005CBB89 /* SwiftUIIntrospect */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SwiftUIIntrospect;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 34BC9B4A2A96627700B103C2 /* Project object */;
+}
